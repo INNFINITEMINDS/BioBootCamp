@@ -1,7 +1,7 @@
-#Day 2 Journal Outline
+# Day 2 Journal Outline
 Write down a little about what we are going to be learning today. What do you already know? Are you excited? Scared?
 
-##Electronics Notes
+## Electronics Notes
 Important things to note:
 - What is electricity?
 - What does a battery do?
@@ -10,10 +10,10 @@ Important things to note:
 - What is the difference between series and parallel circuits?
 - Is there advantages to using series vs parallel circuits?
 
-##Lemon Battery Notes
+## Lemon Battery Notes
 Try and write down what you try for the lemon battery. What works? Draw a picture and a circuit diagram. If you need help, ask Dr.B or the TAs.
 
-##Super Battery Notes
+## Super Battery Notes
 What happened with the super battery? How did we make it? Did we put the lemons in series or in parallel?
 Write down any observations you have from the demo and make sure to draw a circuit diagram and a picture of the setup.
 
