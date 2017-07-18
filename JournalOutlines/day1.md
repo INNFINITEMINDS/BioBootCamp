@@ -1,6 +1,6 @@
 # Day 1 Journal Outline
 Write down something about the people you meet.
-Write down a little about what we are going to learn today. 
+Write down a little about what we are going to learn today.
 
 ## Linux Notes
 Important things to note:
