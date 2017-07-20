@@ -37,12 +37,11 @@ void setup()
   Serial.begin(9600);
 
   // Set all the pins to be inputs or outputs as appropriate
-  pinMode(LED1, OUTPUT);
-  pinMode(LED2, OUTPUT);
-  pinMode(LED3, OUTPUT);
-  pinMode(LED4, OUTPUT);
-  pinMode(LED5, OUTPUT);
-  pinMode(buttonPin, INPUT);
+  /*
+  !!!!!!!!!!!!!!!!
+  INSERT CODE HERE
+  !!!!!!!!!!!!!!!!
+  */
 
   // Start with the first LED on and the direction as "true"
   currentLED = LED1;
@@ -70,13 +69,14 @@ void loop()
     if (buttonState == LOW && direction == true)
     {
       // we need to check if we are at the end of the row!
-      if (currentLED == lastLED)
+      if (/* INSERT CODE HERE */)
       {
         // if it IS at the end of the row, change direction and decrement currnetLED
-        direction = false;
-        digitalWrite(currentLED, LOW);
-        currentLED--;
-        digitalWrite(currentLED, HIGH);
+        /*
+        !!!!!!!!!!!!!!!!
+        INSERT CODE HERE
+        !!!!!!!!!!!!!!!!
+        */
       }
       else
       {
@@ -88,7 +88,7 @@ void loop()
 
     // If the button isn't pushed AND the direction is false (aka "backwards")
     // then we need to switch the LED by DECREMENTING
-    else if (buttonState == LOW && direction == false)
+    else if (/* INSERT CODE HERE */)
     {
       // we need to check if we are at the beginning of the row!
       if (currentLED == firstLED)
@@ -101,9 +101,11 @@ void loop()
       }
       else
       {
-        digitalWrite(currentLED, LOW);
-        currentLED--;
-        digitalWrite(currentLED, HIGH);
+        /*
+        !!!!!!!!!!!!!!!!
+        INSERT CODE HERE
+        !!!!!!!!!!!!!!!!
+        */
       }
     }
 
@@ -111,20 +113,39 @@ void loop()
     else
     {
       // remove a life
-      lives--;
+      /*
+      !!!!!!!!!!!!!!!!
+      INSERT CODE HERE
+      !!!!!!!!!!!!!!!!
+      */
 
       // Figure out what score they get and add it to their total score
+      // First, check if they are on the first OR last LED
       if (currentLED == firstLED || currentLED == lastLED)
       {
-        score = score + 100;
+        /*
+        !!!!!!!!!!!!!!!!
+        INSERT CODE HERE
+        !!!!!!!!!!!!!!!!
+        */
       }
-      else if (currentLED == firstLED + 1 || currentLED == lastLED - 1)
+      // Next, check if they are on the first LED + 1 or the last LED - 1
+      else if (/* INSERT CODE HERE */)
       {
-        score = score + 250;
+        /*
+        !!!!!!!!!!!!!!!!
+        INSERT CODE HERE
+        !!!!!!!!!!!!!!!!
+        */
       }
+      // If it is neither of those they hit a bullseye for max points!
       else
       {
-        score = score + 500;
+        /*
+        !!!!!
+        INSERT CODE HERE
+        !!!!!
+        */
       }
 
       // give the user a little message about where they are in the game!
@@ -133,7 +154,11 @@ void loop()
       Serial.println(" lives left");
 
       Serial.print("Your current score is: ");
-      Serial.println(score);
+      /*
+      !!!!!!!!!!!!!!!!
+      INSERT CODE HERE
+      !!!!!!!!!!!!!!!!
+      */
 
       Serial.println("Please take your finger off the button and wait for the LEDs to start flashing...");
       delay(waitTime); // wait 5 seconds before starting again...

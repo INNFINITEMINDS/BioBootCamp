@@ -73,10 +73,11 @@ void loop()
       if (currentLED == lastLED)
       {
         // if it IS at the end of the row, change direction and decrement currnetLED
-        direction = false;
-        digitalWrite(currentLED, LOW);
-        currentLED--;
-        digitalWrite(currentLED, HIGH);
+        /*
+        !!!!!!!!!!!!!!!!
+        INSERT CODE HERE
+        !!!!!!!!!!!!!!!!
+        */
       }
       else
       {
@@ -101,9 +102,11 @@ void loop()
       }
       else
       {
-        digitalWrite(currentLED, LOW);
-        currentLED--;
-        digitalWrite(currentLED, HIGH);
+        /*
+        !!!!!!!!!!!!!!!!
+        INSERT CODE HERE
+        !!!!!!!!!!!!!!!!
+        */
       }
     }
 
@@ -111,20 +114,36 @@ void loop()
     else
     {
       // remove a life
-      lives--;
+      /*
+      !!!!!!!!!!!!!!!!
+      INSERT CODE HERE
+      !!!!!!!!!!!!!!!!
+      */
 
       // Figure out what score they get and add it to their total score
       if (currentLED == firstLED || currentLED == lastLED)
       {
-        score = score + 100;
+        /*
+        !!!!!!!!!!!!!!!!
+        INSERT CODE HERE
+        !!!!!!!!!!!!!!!!
+        */
       }
       else if (currentLED == firstLED + 1 || currentLED == lastLED - 1)
       {
-        score = score + 250;
+        /*
+        !!!!!!!!!!!!!!!!
+        INSERT CODE HERE
+        !!!!!!!!!!!!!!!!
+        */
       }
       else
       {
-        score = score + 500;
+        /*
+        !!!!!
+        INSERT CODE HERE
+        !!!!!
+        */
       }
 
       // give the user a little message about where they are in the game!
@@ -133,7 +152,11 @@ void loop()
       Serial.println(" lives left");
 
       Serial.print("Your current score is: ");
-      Serial.println(score);
+      /*
+      !!!!!!!!!!!!!!!!
+      INSERT CODE HERE
+      !!!!!!!!!!!!!!!!
+      */
 
       Serial.println("Please take your finger off the button and wait for the LEDs to start flashing...");
       delay(waitTime); // wait 5 seconds before starting again...
