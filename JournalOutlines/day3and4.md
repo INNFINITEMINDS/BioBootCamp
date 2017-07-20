@@ -1,4 +1,4 @@
-# Day 3 Journal Outline
+# Day 3 and Day 4 Journal Outline
 Start by writing down what you think we are going to learn today and what you hope to learn. What have you learned so far? Are you excited?
 Today is a day where if you plan your journal out, you can take notes MUCH more effectively.
 
@@ -11,7 +11,7 @@ Today is a day where if you plan your journal out, you can take notes MUCH more 
 - What did you learn about variables? How do you name them? What are they for?
 - What is the ; for in arduino? Is it special?
 - What are arduino functions? {}
-- How do you setup an arduino program? 
+- How do you setup an arduino program?
 
 ## Arduino Program Notes
 For everyone of your arduino programs, make sure to complete the following.
