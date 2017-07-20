@@ -2,7 +2,6 @@
 speedOfLigt.ino
 created 19 July 2017
 by Samuel Bechara, PhD
-
 This is an arduino game that flashes 5 external LED lights. The goal is to
 press a physical button when the light is in the middle LED. You get less
 points if the light isn't there. If you want to make it more difficult or
@@ -20,11 +19,11 @@ const int LED4 = 11;
 const int LED5 = 12;
 const int firstLED = LED1; // these two variables make the code easier to read
 const int lastLED = LED5;
-const int buttonPin = 7;
+const int buttonPin = 13;
 int buttonState;
 
 // These are the "game" variables. If timeLag is smaller, the game is harder...
-bool direction; // we will call one direction TRUE and the other FALSE
+bool direction; // we will call one direction true and the other false
 int lives = 5; // the player starts with however many lives you want
 int timeLag = 50; // this is the number of ms before the LED switches.
 int currentLED; // store the current LED that is lit
@@ -44,10 +43,10 @@ void setup()
   pinMode(LED5, OUTPUT);
   pinMode(buttonPin, INPUT);
 
-  // Start with the first LED on and the direction as "TRUE"
+  // Start with the first LED on and the direction as "true"
   currentLED = LED1;
   digitalWrite(currentLED, HIGH);
-  direction = TRUE;
+  direction = true;
 
   // give the user a little message about where they are in the game!
   Serial.print("You start with ");
@@ -65,15 +64,15 @@ void loop()
   // First, check if they have enough lives left, or else we don't have to worry about them playing!
   if (lives > 0)
   {
-    // If the button isn't pushed AND the direction TRUE (we can think of that as "forward")
+    // If the button isn't pushed AND the direction true (we can think of that as "forward")
     // then we need to switch the LED by INCREMENTING
-    if (buttonState == LOW && direction == TRUE)
+    if (buttonState == LOW && direction == true)
     {
       // we need to check if we are at the end of the row!
       if (currentLED == lastLED)
       {
         // if it IS at the end of the row, change direction and decrement currnetLED
-        direction = FALSE;
+        direction = false;
         digitalWrite(currentLED, LOW);
         currentLED--;
         digitalWrite(currentLED, HIGH);
@@ -86,15 +85,15 @@ void loop()
       }
     }
 
-    // If the button isn't pushed AND the direction is FALSE (aka "backwards")
+    // If the button isn't pushed AND the direction is false (aka "backwards")
     // then we need to switch the LED by DECREMENTING
-    else if (buttonState == LOW && direction == FALSE)
+    else if (buttonState == LOW && direction == false)
     {
       // we need to check if we are at the beginning of the row!
       if (currentLED == firstLED)
       {
         // if it IS at the beginning of the row, change direction and increment currnetLED
-        direction = TRUE;
+        direction = true;
         digitalWrite(currentLED, LOW);
         currentLED++;
         digitalWrite(currentLED, HIGH);
@@ -135,7 +134,7 @@ void loop()
       Serial.print("Your current score is: ");
       Serial.println(score);
 
-      Serial.println("Please take your finger off the button and wait for the LEDs to start flashing...")
+      Serial.println("Please take your finger off the button and wait for the LEDs to start flashing...");
       delay(5000); // wait 5 seconds before starting again...
 
     }
@@ -152,8 +151,8 @@ void loop()
     {
       Serial.print("Your final score was: ");
       Serial.print(score);
-      Serial.println(" nice job!")
-      Serial.println("Thanks for playing, please press the restart button on the Arduino to play again!")
+      Serial.println(" nice job!");
+      Serial.println("Thanks for playing, please press the restart button on the Arduino to play again!");
       delay(10000);
     }
   }
