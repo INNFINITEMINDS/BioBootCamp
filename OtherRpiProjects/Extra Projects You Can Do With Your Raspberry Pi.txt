@@ -1,0 +1,12 @@
+# Extra Projects You Can Do With Your Raspberry Pi
+These are the projects that were emailed to me that people asked to have included in a packet.
+
+Some of them are super cool! I included one that I found using a pi-top Pulse. It isn't cheap ($49.99) but it is super EASY. You can just plug it into your pi-top and instantly get Alexa, the amazon virtual assistant.
+
+Of course, if you need *any help at all* be sure to email me at samuel.bechara@marquette.edu and I would love to help however I can. This sort of thing is my favorite thing to do.
+
+No matter what you do, remember that learning is **hard** and that **anything worth doing is going to be difficult**. You should be proud of all you have learned this week. I am proud of all of you.
+
+Keep up the hard work and I hope to hear from you about all your future projects!
+
+Dr.B
