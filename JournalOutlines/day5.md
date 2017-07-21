@@ -13,12 +13,16 @@ Important things to note:
 * What are atria?
 * What are ventricles?
 
-## Old-School ECG Notes 
+## Home Made Stethoscope and Resting Heart Rate
+* What does your heart sound like?
+* What is your resting heart rate?
+
+## Old-School ECG Notes
 * What is special about electrodes? Do they have anything special in them?
 * How do you calculate your heart-rate from an ECG tracing?
 
 ## Your ECG Program
 Make sure you "hack" this program. Change colors, make it your own. If you are feeling VERY ambitious, see if you can figure out an algorithm to add R-Wave detection. From that you can calculate the heart rate from this graph.
 
-## Reflection Entry 5 
+## Reflection Entry 5
 *This is your last opportunity to reflect.* What did you learn this week? Did you have fun? Is there something that you did that you wish you didn't? Did you meet anyone fun?
